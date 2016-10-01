@@ -29,6 +29,9 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
+        <li>              <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button>
+              <div id="status">
+              </div></li>
         <li><a href="#myPage">HOME</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -45,11 +48,12 @@
       <div class="container">
         <div class="row">
           <div class="col-lg-12">
-            <img  class="img-responsive img-circle" src="img/profile.png" alt="">
+            <img  class="img-responsive img-circle person" src="img/profile.png" alt="">
             <div class="intro-text">
-              <h1 id="homeHeading">Ang (Leon) Li</h1>
+              <h1 id="homeHeading">Ang Li (Leon)</h1>
               <hr class="head">
-              <p>Description about me</p>
+              <p>Active learner in Computer Science.</p>
+
               <!-- <span class="name">Name</span> -->
             </div>
           </div>
@@ -61,23 +65,26 @@
   </div>
 </header>
 <!-- Container (Contact Section) -->
-<div id="about">
-<div class="container">
-  <h3 class="text-center">ABOUT ME</h3>
-  <hr>
-  <div class="row">
-    <div class="col-sm-14">
+<div id="about" class="bg-1">
+  <div class="container">
+    <div class="row">
+    <h3 class="text-center">ABOUT ME</h3>
+    <hr>
+    
+      <div class="col-sm-1">
+      </div>
+      <div class="col-sm-10">
+        <p >I am a Graduate student currently studying at Boston University College of Engineering. I am from Beijing, China. I have spent 5 years in Hong Kong persuing my Bachelor degree plus a one-year coop internship. I love the cities that I have stayed(BJ,HK,BOS). I like bass guitar, the solid sound that support any musical performance. Bass is the muscle.</p>
+      </div>
+      <div class="col-sm-1">
+      </div>
     </div>
-    <div class="col-sm-14">
-      <p >I am a Graduate student currently studying at Boston University College of Engineering. I am from Beijing, China. I have spent 5 years in Hong Kong persuing my Bachelor degree plus a one-year coop internship.</p>
+    <div class="row">
+      <div class="col-sm-12 text-center">
+        <a href="resource/resume.pdf"><button type="button" class="btn btn-default" >Download My Resume</button></a>
+      </div>
     </div>
-    <div class="col-sm-14">
-    </div>
-  </div>
-
-</div>
-</div>
-<div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
@@ -85,50 +92,53 @@
       <li data-target="#myCarousel" data-slide-to="2"></li>
     </ol>
 
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      <div class="item active">
-        <div class="carousel-caption">
-          <h3>Master of Science student</h3>
-          <p>pasdfdsfsdfsvdfdsdcsdsdvsdfascsdvesfsdvdsadfsdccsefasdvvsdsefdsdcsdgsafdcs</p>
-        </div>
-        <img src="img/c1.jpg" alt="New York" width="1200" height="700">
+      <!-- Wrapper for slides -->
+      <div class="carousel-inner" role="listbox">
+        <div class="item active">
+          <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+          </div>
+          <img src="img/c1.jpg" alt="New York" width="1200" height="700">
 
+        </div>
+
+        <div class="item">
+          <img src="img/c2.jpg" alt="Chicago" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
+      
+        <div class="item">
+          <img src="img/c3.jpg" alt="Los Angeles" width="1200" height="700">
+          <div class="carousel-caption">
+            <h3></h3>
+            <p></p>
+          </div>
+        </div>
       </div>
 
-      <div class="item">
-        <img src="img/c2.jpg" alt="Chicago" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>C2</h3>
-          <p>p2</p>
-        </div>
-      </div>
-    
-      <div class="item">
-        <img src="img/c3.jpg" alt="Los Angeles" width="1200" height="700">
-        <div class="carousel-caption">
-          <h3>C3</h3>
-          <p>p3</p>
-        </div>
-      </div>
+      <!-- Left and right controls -->
+      <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
-
-    <!-- Left and right controls -->
-    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
-      <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-      <span class="sr-only">Previous</span>
-    </a>
-    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
-      <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-      <span class="sr-only">Next</span>
-    </a>
+  </div>
 </div>
 
+
 <!-- Container (The Band Section) -->
-<div id="projects" class="container text-center">
-  <h3>PROJECTS</h3>
+<div id="projects" class="container">
+  <h3 class="text-center">PROJECTS</h3>
   <hr>
-  <p><em>Most of the projects are done in Hong Kong during my undergraduate</em></p>
+  <p class="text-center"><em>Most of the projects are done in Hong Kong during my undergraduate</em></p>
   <br>
   <div class="panel-group" id="accordion">
     <div class="panel panel-default">
@@ -139,18 +149,16 @@
       </div>
       <div id="collapse1" class="panel-collapse collapse">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 text-center">
             <a href="#demo1_1" data-toggle="collapse">
               <img src="img/face.jpg" class="img-thumbnail" alt="Random Name" width="255" height="255">
             </a>
             <p class="text-center"><strong>Pose-Invariant Face Recognition</strong></p>
+            <p><em>Sept 2015 - May 2016</em></p>
             <div id="demo1_1" class="collapse">
-              <ul style="list-style-type:none">
-                <li>A prototype face recognition system which is robust to pose variations</li>
-                <li>Designed algorithms to estimate the corresponding frontal-viewed human face images from the face images at different angles</li>
-                <li>Evaluated with Eigenface method, the recognition accuracy increased by 28% for non-frontal view face images</li>
-                <li>Open libraries used: Eigen, Boost</li>
-              </ul> 
+                <p>A prototype face recognition system which is robust to pose variations. Designed algorithms to estimate the corresponding frontal-viewed human face images from the face images at different angles.
+                Evaluated with Eigenface method, the recognition accuracy increased by 28% for non-frontal view face images</p>
+                <p><em>Open libraries used: Eigen, Boost</em></p>
             </div>
           </div>
         </div>      
@@ -166,34 +174,32 @@
       </div>
       <div id="collapse2" class="panel-collapse collapse">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 text-center">
             <a href="#demo2_1" data-toggle="collapse">
               <img src="img/at.jpg" class="img-thumbnail" alt="Random Name" width="255" height="255">
             </a>
             <p class="text-center"><strong>One-click AT command customization tool</strong></p>
+            <p class="text-center"><em>Feb 2015 - May 2015</em></p>
             <div id="demo2_1" class="collapse">
-              <ul style="list-style-type:none">
-                <li>Written in C++, the Windows CLI application used to configuring Sierra Wireless AirPrime module</li>
-                <li>Programmed with Windows API to automatically locates corresponding COM port</li>
-                <li>The software sends designated AT command patch to the module</li>
-                <li>One-click</li>
-              </ul> 
+                <p>Written in C++, the Windows CLI application used to configuring Sierra Wireless AirPrime module. 
+                Programmed with Windows API to automatically locates corresponding COM port. 
+                The software sends designated AT command patch to the module through 
+                One-click</p>
             </div>
           </div>
         </div>  
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 text-center">
             <a href="#demo2_2" data-toggle="collapse">
               <img src="img/ic.jpg" class="img-thumbnail" alt="Random Name" width="255" height="255">
             </a>
             <p class="text-center"><strong>Internet of Things: Temperature-Humidity detector</strong></p>
+            <p class="text-center"><em>Jul 2015 - Aug 2015</em></p>
             <div id="demo2_2" class="collapse">
-            <ul style="list-style-type:none">
-              <li>Designed and programmed the embedded system on Nuvoton Nu-Maker Kit</li>
-              <li>The product measures data with sensors and sends the combined information to the on-line platform</li>
-              <li>Programmed the network sockets which allow the detector device and the server to transmit data through TCP</li>
-              <li>Establish and programmed the multi-thread TCP server and the MySQL database</li>
-            </ul>            
+              <p>Designed and programmed the embedded system on Nuvoton Nu-Maker Kit. 
+              he product measures data with sensors and sends the combined information to the on-line platform. 
+              Programmed the network sockets which allow the detector device and the server to transmit data through TCP
+              Establish and programmed the multi-thread TCP server and the MySQL database.</p>           
             </div>
           </div>
         </div>     
@@ -209,34 +215,32 @@
       </div>
       <div id="collapse3" class="panel-collapse collapse">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 text-center">
             <a href="#demo3_1" data-toggle="collapse">
               <img src="img/homegame.png" class="img-thumbnail" alt="Random Name" width="255" height="255">
             </a>
             <p class="text-center"><strong>Game: Home – A Journey of Ritual</strong></p>
+            <p class="text-center"><em>Jan 2016</em></p>
             <div id="demo3_1" class="collapse">
-            <ul style="list-style-type:none">
-              <li>Project for Global Game Jam 2016</li>
-              <li>Wrote the movement functions of the game role</li>
-              <li>Wrote the interface for scene switch</li>
-              <li><a href="http://globalgamejam.org/2016/games/home-journey-ritual">Project webpage</a></li>
-            </ul>            
+              <p>Project for Global Game Jam 2016. 
+              Wrote the movement functions of the game role. 
+              Wrote the interface for scene switch.
+              <p><a href="http://globalgamejam.org/2016/games/home-journey-ritual">Project webpage</a></p>        
             </div>
           </div>
         </div>  
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 text-center">
             <a href="#demo3_2" data-toggle="collapse">
               <img src="img/frankgame.jpg" class="img-thumbnail" alt="Random Name" width="255" height="255">
             </a>
             <p class="text-center"><strong>Times Table</strong></p>
+            <p class="text-center"><em>Jan 2013 - Apr 2013</em></p>
             <div id="demo3_2" class="collapse">
-            <ul style="list-style-type:none">
-              <li>A GUI math game developed based on Visual C++, .NET framework 4.0</li>
-              <li>Designed and implemented the algorithm for the game rule</li>
-              <li>Designed and implemented the algorithm for the leaderboard feature</li>
-              <li>Designed and programmed the login system</li>
-            </ul>
+              <p>A GUI math game developed based on Visual C++, .NET framework 4.0. 
+              Designed and implemented the algorithm for the game rule. 
+              Designed and implemented the algorithm for the leaderboard feature. 
+              Designed and programmed the login system. </p>
             </div>
           </div>
         </div>     
@@ -252,18 +256,17 @@
       </div>
       <div id="collapse4" class="panel-collapse collapse">
         <div class="row">
-          <div class="col-sm-12">
+          <div class="col-sm-12 text-center">
             <a href="#demo2" data-toggle="collapse">
               <img src="img/towerbuilder.jpg" class="img-thumbnail" alt="Random Name" width="255" height="255">
             </a>
             <p class="text-center"><strong>Tower builder</strong></p>
+            <p class="text-center"><em>Jan 2015 - Apr 2015</em></p>
             <div id="demo2" class="collapse">
-            <ul style="list-style-type:none">
-              <li>A line-tracking robot vehicle</li>
-              <li>The robot vehicle moves and picks specific target objects to build a tower</li>
-              <li>Programmed in C based on Atmel ARM Microprocessor</li>
-              <li>Build from scratch (experienced in soldering, hardware troubleshooting and control theroies such as PID)</li>
-            </ul>
+              <p>A line-tracking robot vehicle. 
+              The robot vehicle moves and picks specific target objects to build a tower. 
+              Programmed in C based on Atmel ARM Microprocessor. 
+              Build from scratch (experienced in soldering, hardware troubleshooting and control theroies such as PID).</p>
             </div>
           </div>
         </div>      
@@ -340,7 +343,7 @@
           <img src="img/soccer.jpg" class="img-circle" alt="soccer">
           <p><strong>Soccer</strong></p>
           <p>about soccer</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal1">More</button>
         </div>
       </div>
       <div class="col-sm-4">
@@ -348,7 +351,7 @@
           <img src="img/music.jpg" class="img-circle" alt="music" >
           <p><strong>Music</strong></p>
           <p>about music</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal2">More</button>
         </div>
       </div>
       <div class="col-sm-4">
@@ -356,42 +359,74 @@
           <img src="img/photography.jpg" class="img-circle" alt="photography" >
           <p><strong>Photography</strong></p>
           <p>about photography</p>
-          <button class="btn" data-toggle="modal" data-target="#myModal">More</button>
+          <button class="btn" data-toggle="modal" data-target="#myModal3">More</button>
         </div>
       </div>
     </div>
   </div>
   
   <!-- Modal -->
-  <div class="modal fade" id="myModal" role="dialog">
+  <div class="modal fade" id="myModal1" role="dialog">
     <div class="modal-dialog">
     
       <!-- Modal content-->
       <div class="modal-content">
         <div class="modal-header">
           <button type="button" class="close" data-dismiss="modal">×</button>
-          <h4><span class="glyphicon glyphicon-lock"></span> title1</h4>
         </div>
         <div class="modal-body">
-          <form role="form">
-            <div class="form-group">
-              <label for="psw"><span class="glyphicon glyphicon-shopping-cart"></span> description</label>
-              <input type="number" class="form-control" id="psw" placeholder="How many?">
-            </div>
-            <div class="form-group">
-              <label for="usrname"><span class="glyphicon glyphicon-user"></span> to</label>
-              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
-            </div>
-              <button type="submit" class="btn btn-block">click
-                <span class="glyphicon glyphicon-ok"></span>
-              </button>
-          </form>
+          <h3>Juventus</h3>
+          <p>Juventus is my favorate club. It is a champions team in Italy as well as Europe. I have been watching their matches over 10 years. We love the steady performance of the Bianconeri. Del Piero and Buffon are my favorite players.</p>
         </div>
         <div class="modal-footer">
           <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
-            <span class="glyphicon glyphicon-remove"></span> Cancel
+            <span class="glyphicon glyphicon-remove"></span> Close
           </button>
-          <p>Need <a href="#">help?</a></p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal2" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <div class="modal-body">
+          <h3>Jazz, Blues and Rock 'n' Roll</h3>
+          <p>I love Rock 'n' Roll in any forms. There were so many fantastic bands in 20th century, like Pink Floyd, Led Zeppelin, Queen, Guns N Roses, AC/DC and so on. I also enjoy Jazz and Blues. I like Louis Armstrong, Duke Ellinton, B.B King, Buddy Guy, SRV and many.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Close
+          </button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal3" role="dialog">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">×</button>
+        </div>
+        <div class="modal-body">
+          <h3>Shot</h3>
+          <p>I like to play with cameras. My camera is Canon EOS 6D. It is a great full-frame camera, at least for me, while I don't have great lenses though. My perspective is to work hard and earn some great lenses</p>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal">
+            <span class="glyphicon glyphicon-remove"></span> Close
+          </button>
+
         </div>
       </div>
     </div>
@@ -404,8 +439,8 @@
   <h3 class="text-center">CONTACT</h3>
   <hr>
   <p class="text-center"><em>Contact me</em></p>
-  <p class="text-center"><span class="glyphicon glyphicon-map-marker"></span>Boston, US</p>
-  <p class="text-center"><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>
+  <p class="text-center"><span class="glyphicon glyphicon-map-marker"></span>Boston, MA</p>
+  <p class="text-center"><span class="glyphicon glyphicon-envelope"></span>Email: leonardoli525@gmail.com</p>
     <div class="row">
     <div class="col-md-4">
     
@@ -413,16 +448,16 @@
     <div class="col-md-4 text-center">
       <ul class="list-inline">
         <li>
-            <a href="#" class="btn-social btn-outline social"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/in/ang-li-290b6561" target="_blank" class="btn-social btn-outline social"><i class="fa fa-linkedin-square fa-4x" aria-hidden="true"></i></a>
         </li>
         <li>
-            <a href="#" class="btn-social btn-outline social"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/leonli525" target="_blank" class="btn-social btn-outline social"><i class="fa fa-facebook-official fa-4x" aria-hidden="true"></i></a>
         </li>
         <li>
-            <a href="#" class="btn-social btn-outline social"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a>
+            <a href="https://plus.google.com/u/0/115839008998805239688" target="_blank" class="btn-social btn-outline social"><i class="fa fa-google-plus-square fa-4x" aria-hidden="true"></i></a>
         </li>
         <li>
-            <a href="#" class="btn-social btn-outline social"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
+            <a href="https://github.com/Allegro-Leon-Li" target="_blank" class="btn-social btn-outline social"><i class="fa fa-github-square fa-4x" aria-hidden="true"></i></a>
         </li>
       </ul>    
     </div>
@@ -439,7 +474,7 @@
   <a class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a><br><br>
-  <p>Bootstrap Theme Made By <a href="http://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools">www.w3schools.com</a></p>
+  <p>2016 All Rights Reserved. Ang Li Personal Website</p>
 </footer>
 
 <script>
@@ -472,6 +507,7 @@ $(document).ready(function(){
   });
 })
 </script>
+<script src="js/fb.js"></script>
 
 </body>
 </html>
